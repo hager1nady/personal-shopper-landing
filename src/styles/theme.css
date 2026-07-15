@@ -1,0 +1,162 @@
+@custom-variant dark (&:is(.dark *));
+
+:root {
+  --font-size: 16px;
+  --background: #f7f5f2;
+  --foreground: #1a0a0f;
+  --card: #ffffff;
+  --card-foreground: #1a0a0f;
+  --popover: #ffffff;
+  --popover-foreground: #1a0a0f;
+  --primary: #5a0018;
+  --primary-foreground: #ffffff;
+  --secondary: #f2f2f2;
+  --secondary-foreground: #1a0a0f;
+  --muted: #ede9e3;
+  --muted-foreground: #7a6b6f;
+  --accent: #c9a227;
+  --accent-foreground: #ffffff;
+  --destructive: #d4183d;
+  --destructive-foreground: #ffffff;
+  --border: rgba(90, 0, 24, 0.1);
+  --input: transparent;
+  --input-background: #f3f0eb;
+  --switch-background: #cbced4;
+  --font-weight-medium: 500;
+  --font-weight-normal: 400;
+  --ring: rgba(90, 0, 24, 0.3);
+  --chart-1: #5a0018;
+  --chart-2: #c9a227;
+  --chart-3: #7a6b6f;
+  --chart-4: #ede9e3;
+  --chart-5: #1a0a0f;
+  --radius: 1.25rem;
+  --sidebar: #f7f5f2;
+  --sidebar-foreground: #1a0a0f;
+  --sidebar-primary: #5a0018;
+  --sidebar-primary-foreground: #ffffff;
+  --sidebar-accent: #ede9e3;
+  --sidebar-accent-foreground: #1a0a0f;
+  --sidebar-border: rgba(90, 0, 24, 0.1);
+  --sidebar-ring: rgba(90, 0, 24, 0.3);
+}
+
+.dark {
+  --background: #1a0a0f;
+  --foreground: #f7f5f2;
+  --card: #2a1018;
+  --card-foreground: #f7f5f2;
+  --popover: #2a1018;
+  --popover-foreground: #f7f5f2;
+  --primary: #9b1a3a;
+  --primary-foreground: #ffffff;
+  --secondary: #2a1018;
+  --secondary-foreground: #f7f5f2;
+  --muted: #3a1a22;
+  --muted-foreground: #a08890;
+  --accent: #c9a227;
+  --accent-foreground: #ffffff;
+  --destructive: #d4183d;
+  --destructive-foreground: #ffffff;
+  --border: rgba(247, 245, 242, 0.1);
+  --input: rgba(247, 245, 242, 0.08);
+  --ring: rgba(201, 162, 39, 0.4);
+  --font-weight-medium: 500;
+  --font-weight-normal: 400;
+  --chart-1: #9b1a3a;
+  --chart-2: #c9a227;
+  --chart-3: #a08890;
+  --chart-4: #3a1a22;
+  --chart-5: #f7f5f2;
+  --sidebar: #2a1018;
+  --sidebar-foreground: #f7f5f2;
+  --sidebar-primary: #9b1a3a;
+  --sidebar-primary-foreground: #ffffff;
+  --sidebar-accent: #3a1a22;
+  --sidebar-accent-foreground: #f7f5f2;
+  --sidebar-border: rgba(247, 245, 242, 0.1);
+  --sidebar-ring: rgba(201, 162, 39, 0.4);
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-input-background: var(--input-background);
+  --color-switch-background: var(--switch-background);
+  --color-ring: var(--ring);
+  --color-chart-1: var(--chart-1);
+  --color-chart-2: var(--chart-2);
+  --color-chart-3: var(--chart-3);
+  --color-chart-4: var(--chart-4);
+  --color-chart-5: var(--chart-5);
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+  --color-sidebar: var(--sidebar);
+  --color-sidebar-foreground: var(--sidebar-foreground);
+  --color-sidebar-primary: var(--sidebar-primary);
+  --color-sidebar-primary-foreground: var(
+    --sidebar-primary-foreground
+  );
+  --color-sidebar-accent: var(--sidebar-accent);
+  --color-sidebar-accent-foreground: var(
+    --sidebar-accent-foreground
+  );
+  --color-sidebar-border: var(--sidebar-border);
+  --color-sidebar-ring: var(--sidebar-ring);
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+    font-family: "Manrope", sans-serif;
+  }
+
+  html {
+    font-size: var(--font-size);
+  }
+
+  h1,
+  h2,
+  h3 {
+    font-family: "Playfair Display", serif;
+    font-weight: 500;
+    line-height: 1.2;
+  }
+
+  h4,
+  label,
+  button,
+  input {
+    font-family: "Manrope", sans-serif;
+    font-weight: var(--font-weight-medium);
+    line-height: 1.5;
+  }
+
+  p {
+    font-family: "Manrope", sans-serif;
+    font-weight: var(--font-weight-normal);
+    line-height: 1.7;
+  }
+}
