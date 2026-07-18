@@ -53,8 +53,8 @@ export const TRANSLATIONS = {
         {
           title: "Any Other Requests",
           desc: "If you have any additional requests not listed above, we're happy to help. Just let us know what you need, and we'll do our best to make it happen.",
-        },
-      ],
+        }
+      ]
     },
     whyChooseUs: {
       label: "Why Choose Us",
@@ -72,7 +72,7 @@ export const TRANSLATIONS = {
         {
           title: "Trusted Assistance",
           desc: "Honest, reliable service — as if you were shopping in person, without any of the effort.",
-        },
+        }
       ],
     },
     gallery: {
@@ -282,14 +282,6 @@ export const TRANSLATIONS = {
           title: "التسوق من البلد (جدة التاريخية)",
           desc: "كنوز بالجملة من البلد التاريخية في جدة، توصل مباشرة إلى باب منزلك.",
         },
-        {
-          title: "توزيعات المناسبات",
-          desc: "توزيع أنيق للهدايا للمعلمات والطالبات، من الألف إلى الياء.",
-        },
-        {
-          title: "مستلزمات التربية الفنية",
-          desc: "أدوات ومستلزمات إبداعية وتعليمية، توفَّر لمراكز التعليم بعناية.",
-        },
       ],
     },
     whyChooseUs: {
@@ -300,10 +292,6 @@ export const TRANSLATIONS = {
         {
           title: "راحة بلا مجهود",
           desc: "متسوق مخصص لمن يقدّر راحته ووقته — وخاصة عملاءنا من كبار السن.",
-        },
-        {
-          title: "توصيل لكل مناطق المملكة",
-          desc: "خارج جدة، شركاء شحن موثوقون يوصلون طلبك بأمان إلى أي مدينة في المملكة.",
         },
         {
           title: "الطلبات النادرة والخاصة",

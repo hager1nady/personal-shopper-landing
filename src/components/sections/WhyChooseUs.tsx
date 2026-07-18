@@ -22,7 +22,7 @@ export function WhyChooseUs() {
           </h2>
         </FadeUp>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-5 center">
           {WHY_ICONS.map((Icon, i) => {
             const item = t.whyChooseUs.items[i];
             return (
