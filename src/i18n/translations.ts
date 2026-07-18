@@ -51,12 +51,8 @@ export const TRANSLATIONS = {
           desc: "Wholesale treasures sourced from Jeddah's historic old town, delivered to your door.",
         },
         {
-          title: "Occasion Gifting",
-          desc: "Elegant gift distribution for teachers and students, handled from start to finish.",
-        },
-        {
-          title: "Art & Learning Supplies",
-          desc: "Creative materials and educational tools, sourced for learning centers with care.",
+          title: "Any Other Requests",
+          desc: "If you have any additional requests not listed above, we're happy to help. Just let us know what you need, and we'll do our best to make it happen.",
         },
       ],
     },
@@ -68,10 +64,6 @@ export const TRANSLATIONS = {
         {
           title: "Effortless Convenience",
           desc: "A dedicated shopper for those who value their comfort and their time — especially our elderly clients.",
-        },
-        {
-          title: "Kingdom-Wide Delivery",
-          desc: "Beyond Jeddah, trusted shipping partners carry your order safely to any city in Saudi Arabia.",
         },
         {
           title: "Rare & Special Requests",
