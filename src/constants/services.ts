@@ -6,5 +6,4 @@ export const SERVICE_ICONS: LucideIcon[] = [
   Gift,
   Store,
   GraduationCap,
-  // Palette,
 ];
