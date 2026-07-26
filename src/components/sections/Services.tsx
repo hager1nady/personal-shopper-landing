@@ -24,7 +24,11 @@ export function Services() {
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
           {SERVICE_ICONS.map((Icon, i) => {
-            const item = t.services.items[i];
+            // const item = t.services.items[i];
+            const item = t.services.items[i] ?? {
+              title: "",
+              desc: "",
+            };
             return (
               <FadeUp key={item.title} delay={i * 100}>
                 <div className="bg-white rounded-[22px] p-8 border border-[rgba(90,0,24,0.08)] shadow-[0_2px_20px_rgba(90,0,24,0.05)] hover:shadow-[0_12px_48px_rgba(90,0,24,0.13)] transition-all duration-400 hover:-translate-y-1 flex flex-col h-full">
